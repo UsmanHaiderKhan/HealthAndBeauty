@@ -689,13 +689,13 @@ a {
 
 #service .owl-carousel .owl-nav button.owl-next {
     bottom: 104px;
-    right: -275px;
-    height: 148px;
-    width: 148px;
+    right: -209px;
+    height: 140px;
+    width: 70px;
+    border-radius: 140px 0 0 140px;
     position: absolute;
     color: #fff;
     font-weight: bold;
-    border-radius: 50%;
     background-image: -moz-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
@@ -703,13 +703,13 @@ a {
 
 #service .owl-carousel .owl-nav button.owl-prev {
     bottom: 104px;
-    left: -275px;
-    height: 148px;
-    width: 148px;
+    left: -209px;
+    height: 140px;
+    width: 70px;
+    border-radius: 0 140px 140px 0;
     position: absolute;
     color: #fff;
     font-weight: bold;
-    border-radius: 50%;
     background-image: -moz-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(95,95,97) 0%, rgb(77,77,77) 100%);
@@ -717,10 +717,10 @@ a {
 
 #service .flaticon-last-track-left-arrow:before {
     content: "\f101";
-    position: absolute;
     line-height: 0;
     font-size: 33px;
-    left: 65px;
+    left: -9px;
+    position: absolute;
     box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -728,8 +728,9 @@ a {
     content: "\f100";
     line-height: 0;
     font-size: 33px;
+    right: 10px;
     position: absolute;
-    right: 88px;
+    background: transparent;
     box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -1713,7 +1714,7 @@ button:focus {
     }
 
     .dp_item[data-position="2"] {
-        transform: rotateY(0deg) translateX(20%) translateY(-20%) scale(0.9);
+        transform: rotateY(0deg) translateX(16%) translateY(-20%) scale(0.9);
     }
 
     #service .slider-padding {
@@ -1729,27 +1730,29 @@ button:focus {
     }
 
     #service .flaticon-last-track-left-arrow:before {
-        left: 40px;
+        left: -12px;
         font-size: 20px;
     }
 
     #service .owl-carousel .owl-nav button.owl-prev {
-        bottom: 153px;
-        left: -103px;
-        height: 0px;
-        width: 0px;
+        bottom: 118px;
+        left: -48px;
+        height: 90px;
+        width: 45px;
+        border-radius: 0px 90px 90px 0px;
     }
 
     #service .flaticon-right-arrow:before {
-        right: -37px;
+        right: 10px;
         font-size: 20px;
     }
 
     #service .owl-carousel .owl-nav button.owl-next {
-        bottom: 151px;
-        right: 0;
-        height: 0;
-        width: 0px;
+        bottom: 118px;
+        right: -48px;
+        height: 90px;
+        width: 45px;
+        border-radius: 90px 0 0 90px;
     }
 
     body {
@@ -1851,8 +1854,12 @@ button:focus {
         font-size: 22px;
     }
 
-    #service .flaticon-last-track-left-arrow:before {
-        left: 45px;
+    #service .owl-carousel .owl-nav button.owl-next {
+        right: -57px;
+    }
+
+    #service .owl-carousel .owl-nav button.owl-prev {
+        left: -60px;
     }
 
     .gallery-text {
@@ -1909,6 +1916,13 @@ button:focus {
 }
 
 @media screen and (max-width: 800px) {
+    #service .owl-carousel .owl-nav button.owl-next {
+        right: -57px;
+    }
+
+    #service .owl-carousel .owl-nav button.owl-prev {
+        left: -60px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1959,8 +1973,12 @@ button:focus {
         font-size: 22px;
     }
 
+    #service .owl-carousel .owl-nav button.owl-next {
+        right: -43px;
+    }
+
     #service .flaticon-last-track-left-arrow:before {
-        left: 45px;
+        left: -7px;
     }
 
     .gallery-text {
@@ -2022,6 +2040,10 @@ button:focus {
         font-size: 48px;
     }
 
+    .navbar {
+        padding: 10px 83px 10px 10px;
+    }
+
     #home .owl-carousel .owl-nav button.owl-prev {
         left: 32%;
     }
@@ -2038,14 +2060,31 @@ button:focus {
         width: 250px;
     }
 
+    #service .owl-theme .owl-nav {
+        left: 4%;
+    }
+
     #service .owl-carousel .owl-nav button.owl-next {
         bottom: -50px;
         right: 50%;
+        width: 0;
+        height: 0;
+    }
+
+    #service .flaticon-right-arrow:before {
+        right: -24px;
+        font-size: 20px;
+    }
+
+    #service .flaticon-last-track-left-arrow:before {
+        left: 25px;
     }
 
     #service .owl-carousel .owl-nav button.owl-prev {
         bottom: -50px;
         left: 25%;
+        width: 0;
+        height: 0;
     }
 
     .p-86 {
@@ -2099,40 +2138,56 @@ button:focus {
         font-size: 24px;
     }
 
-    #service .owl-carousel .owl-nav button.owl-next {
-        right: -217px;
-        bottom: 105px;
+    #home .owl-carousel .owl-nav button.owl-prev {
+        left: 44%;
+    }
+
+    #home .owl-carousel .owl-nav button.owl-next {
+        right: 50%;
+    }
+
+    #gallery {
+        padding: 40px 15px;
     }
 
     #service .owl-carousel .owl-nav button.owl-prev {
+        bottom: 105px;
+        left: -132px;
+    }
+
+    #service .owl-carousel .owl-nav button.owl-next {
+        right: -132px;
         bottom: 105px;
     }
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
     #service .flaticon-last-track-left-arrow:before {
-        left: 40px;
+        left: -12px;
         font-size: 20px;
     }
 
     #service .owl-carousel .owl-nav button.owl-prev {
-        bottom: 153px;
-        left: -103px;
-        height: 0px;
-        width: 0px;
+        bottom: 118px;
+        left: -88px;
+        height: 90px;
+        width: 45px;
+        border-radius: 0px 90px 90px 0px;
     }
 
     #service .flaticon-right-arrow:before {
-        right: -37px;
+        right: 10px;
         font-size: 20px;
     }
 
     #service .owl-carousel .owl-nav button.owl-next {
-        bottom: 151px;
-        right: 0;
-        height: 0;
-        width: 0px;
+        bottom: 118px;
+        right: -88px;
+        height: 90px;
+        width: 45px;
+        border-radius: 90px 0 0 90px;
     }
+
 
     #gallery {
         padding: 40px 14px;
@@ -2140,14 +2195,34 @@ button:focus {
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    #service .flaticon-last-track-left-arrow:before {
+        left: -12px;
+        font-size: 20px;
+    }
+
     #service .owl-carousel .owl-nav button.owl-prev {
-        bottom: 168px;
-        left: -99px;
+        bottom: 118px;
+        left: -48px;
+        height: 90px;
+        width: 45px;
+        border-radius: 0px 90px 90px 0px;
+    }
+
+    #service .flaticon-right-arrow:before {
+        right: 10px;
+        font-size: 20px;
     }
 
     #service .owl-carousel .owl-nav button.owl-next {
-        bottom: 168px;
-        right: 0px;
+        bottom: 118px;
+        right: -48px;
+        height: 90px;
+        width: 45px;
+        border-radius: 90px 0 0 90px;
+    }
+
+    #gallery {
+        padding: 39px 15px;
     }
 }
 
@@ -2187,6 +2262,16 @@ button:focus {
         padding: 40px 0 58% 0;
     }
 
+    #service .owl-carousel .owl-nav button.owl-next {
+        bottom: 118px;
+        right: -71px;
+    }
+
+    #service .owl-carousel .owl-nav button.owl-prev {
+        bottom: 118px;
+        left: -71px;
+    }
+
     #discount {
         padding: 40px 0;
     }
@@ -2220,13 +2305,13 @@ button:focus {
     }
 
     #service .owl-carousel .owl-nav button.owl-prev {
-        bottom: 168px;
-        left: -135px;
+        bottom: 123px;
+        left: -114px;
     }
 
     #service .owl-carousel .owl-nav button.owl-next {
-        bottom: 168px;
-        right: -27px;
+        bottom: 123px;
+        right: -114px;
     }
 
     .btn-position {
