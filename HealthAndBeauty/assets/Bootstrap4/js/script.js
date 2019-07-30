@@ -77,10 +77,11 @@ $(document).ready(function () {
 $(function () {
     $('#owl-one').owlCarousel({
         loop: true,
-        margin: 24,
+        margin: 30,
         dots: false,
         nav: true,
         slideBy: 4,
+        stagePadding: 20,
         item: 4,
         navText: ["<i class='flaticon-last-track-left-arrow'> </i>", "<i class='flaticon-right-arrow'> </i>"],
         responsiveClass: true,

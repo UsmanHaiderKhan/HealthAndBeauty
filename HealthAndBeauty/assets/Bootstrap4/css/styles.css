@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 @font-face {
@@ -41,7 +41,7 @@
     src: url('../../Fonts/Font Bureau - HeronSans Medium.otf') format('opentype');
 }
 /*
-   
+
     font-family: 'Poppins', sans-serif;
 
 */
@@ -219,23 +219,6 @@ ul.CTAs {
     transition-delay: 0.2s;
 }
 
-/* #sidebarCollapse span:first-of-type {
-    transform: rotate(53deg) translate(21px, 16px);
-}
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-} */
-
 a {
     text-decoration: none;
     color: #fff;
@@ -261,7 +244,7 @@ a {
 }
 
 
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 #home {
@@ -458,7 +441,7 @@ a {
     margin-left: 0;
     box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
 }
-/*================================= 
+/*=================================
        Abuot Section Styling
   =================================*/
 #about {
@@ -545,7 +528,7 @@ a {
     transform: rotateY(0deg) translateX(39%) translateY(-9%) scale(0.8);
 }
 
-/*================================= 
+/*=================================
     Service Section Styling
   =================================*/
 #service {
@@ -586,7 +569,7 @@ a {
         border-width: 1px;
         border-color: rgb(110, 110, 110);
         background-color: rgb(95, 95, 97);
-        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.75);
     }
 
         .slider-card:hover .service-heading {
@@ -687,8 +670,12 @@ a {
         background: transparent;
     }
 
+#service .owl-carousel .owl-stage {
+    margin: 40px 0;
+}
+
 #service .owl-carousel .owl-nav button.owl-next {
-    bottom: 104px;
+    bottom: 149px;
     right: -209px;
     height: 140px;
     width: 70px;
@@ -702,7 +689,7 @@ a {
 }
 
 #service .owl-carousel .owl-nav button.owl-prev {
-    bottom: 104px;
+    bottom: 149px;
     left: -209px;
     height: 140px;
     width: 70px;
@@ -721,7 +708,7 @@ a {
     font-size: 33px;
     left: -9px;
     position: absolute;
-    box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
+    text-shadow: 1.5px 2.866px 2px rgba(0, 0, 0, 0.75);
 }
 
 #service .flaticon-right-arrow:before {
@@ -731,14 +718,14 @@ a {
     right: 10px;
     position: absolute;
     background: transparent;
-    box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.75);
+    text-shadow: 1.5px 2.866px 2px rgba(0, 0, 0, 0.75);
 }
 
 #service .slider-padding {
     padding: 0 195px 0 195px;
 }
 
-/*================================= 
+/*=================================
       Gallery Section Styling
   =================================*/
 #gallery {
@@ -780,7 +767,7 @@ a {
     font-family: 'Font Bureau - HeronSans Regular';
 }
 
-/*================================= 
+/*=================================
        Blog Section Styling
   =================================*/
 #blog {
@@ -835,7 +822,7 @@ a {
     font-family: 'Font Bureau - HeronSans Regular';
 }
 
-/*================================= 
+/*=================================
        discount Section Styling
   =================================*/
 #discount {
@@ -919,7 +906,7 @@ a {
     padding: 113px 0;
 }
 
-/*================================= 
+/*=================================
        Contact Section Styling
   =================================*/
 #contact {
@@ -992,7 +979,7 @@ a {
     background-color: rgb(0, 0, 0);
     box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.4);
 }
-/*================================= 
+/*=================================
        Footer Section Styling
   =================================*/
 #footer {
@@ -1025,7 +1012,7 @@ a {
     font-weight: 300;
     font-family: 'Font Bureau - HeronSans Light';
 }
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -2074,6 +2061,10 @@ button:focus {
     #service .flaticon-right-arrow:before {
         right: -24px;
         font-size: 20px;
+    }
+
+    .slider-card {
+        padding: 27px 20px;
     }
 
     #service .flaticon-last-track-left-arrow:before {
